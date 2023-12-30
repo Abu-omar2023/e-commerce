@@ -41,10 +41,14 @@ $('.intro .rightIntro').animate({
  } 
 setInterval(slider,3000);
 
-// $('.sale .introSale').animate({
-//     marginTop:'0',
+$('.sale .introSale').animate({
+    marginRight:'0',
   
-// },800)
+},800);
+$('.sale .photoSale').animate({
+    marginLeft:'0',
+  
+},800)
 
 //  function automaticSlide(){
 //     var firstIndex=0;
