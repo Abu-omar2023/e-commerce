@@ -48,7 +48,14 @@ $('.sale .introSale').animate({
 $('.sale .photoSale').animate({
     marginLeft:'0',
   
-},800)
+},800);
+$('#autoWidth').lightSlider({
+    autoWidth:true,
+    loop:true,
+    onSliderLoad: function() {
+        $('#autoWidth').removeClass('cS-hidden');
+    } 
+});  
 
 //  function automaticSlide(){
 //     var firstIndex=0;
