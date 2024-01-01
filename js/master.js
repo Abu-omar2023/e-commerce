@@ -49,13 +49,42 @@ $('.sale .photoSale').animate({
     marginLeft:'0',
   
 },800);
+
 $('#autoWidth').lightSlider({
     autoWidth:true,
     loop:true,
     onSliderLoad: function() {
         $('#autoWidth').removeClass('cS-hidden');
-    } 
-});  
+    }
+});
+$('#autoWidth2').lightSlider({
+    autoWidth:true,
+    loop:true,
+    onSliderLoad: function() {
+        $('#autoWidth2').removeClass('cS-hidden');
+    }
+});
+$('#autoWidth3').lightSlider({
+    autoWidth:true,
+    loop:true,
+    onSliderLoad: function() {
+        $('#autoWidth3').removeClass('cS-hidden');
+    }
+});
+
+$(window).scroll(function(){
+    if($(window).scrollTop() >= $('.bodyBackground2').offSet().top() ){
+        
+        $('.bodyImg').src="img/pexels-marek-levak-2265487.jpg"
+        
+    }else{
+        
+            
+        }
+    })
+
+
+
 
 //  function automaticSlide(){
 //     var firstIndex=0;
