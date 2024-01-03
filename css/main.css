@@ -564,7 +564,7 @@ margin: 10px;
   }
      
 .box {
-    width: 280px;
+    width: 300px;
     border-radius: 10px;
     overflow: hidden;
     background-color: #fff;
@@ -673,5 +673,6 @@ transition: all ease 0.3s;
 .bodyBackground3 {
     width: 100%;
     height: 300px;
+    background: none;
 }
  /* body background */
