@@ -276,7 +276,7 @@ position: relative;
 }
 .intro .rightIntro h1{
    color: white;
- font-size: 100px;
+ font-size: 80px;
  transform: rotate(-10deg);
 font-weight: bold;
 text-shadow:10px 10px 10px black;
@@ -564,7 +564,7 @@ margin: 10px;
   }
      
 .box {
-    width: 300px;
+    width: 280px;
     border-radius: 10px;
     overflow: hidden;
     background-color: #fff;

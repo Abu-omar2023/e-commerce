@@ -87,6 +87,13 @@ $('#autoWidth3').lightSlider({
         $('#autoWidth3').removeClass('cS-hidden');
     }
 });
+$('#autoWidth4').lightSlider({
+    autoWidth:true,
+    loop:true,
+    onSliderLoad: function() {
+        $('#autoWidth').removeClass('cS-hidden');
+    }
+});
 $(window).scroll(function(){
     if($(window).scrollTop() >= $('.partePhone').offset().top){
         
