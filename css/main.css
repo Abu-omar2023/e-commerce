@@ -5,6 +5,7 @@
 :root {
     --main--color: #2a9d8f
 }
+
 body{
     font-family: 'Fuggles', cursive;
 font-family: 'Marhey', sans-serif;
@@ -18,11 +19,13 @@ font-family: 'Noto Kufi Arabic', sans-serif;
 font-family: 'Rubik', sans-serif; */
 
 }
-.bodyImg img {
+.bodyImg {
     position: fixed;
     width: 100%;
-    height: 100vh;
-    z-index: -1 ;
+    height: 100%;
+    z-index: -1;
+    background-image: url(../img/img-1946.jpg);
+    background-size: cover;
     /* display: none; */
 }
 /* start header */
@@ -256,7 +259,7 @@ position: relative;
 .overlay {
     width: 100%;
     height: 100%;
-    background-color: rgba(13, 10, 10, 0.37);
+    background-color: rgba(13, 10, 10, 0);
     position: absolute;
     top: 0;
     left: 0;
@@ -273,10 +276,11 @@ position: relative;
 }
 .intro .rightIntro h1{
    color: white;
- font-size: 80px;
+ font-size: 100px;
  transform: rotate(-10deg);
 font-weight: bold;
 text-shadow:10px 10px 10px black;
+font-family: 'Marhey', sans-serif;
 }
 .intro .rightIntro p{
     text-align: center;
@@ -410,6 +414,8 @@ text-shadow:10px 10px 10px black;
     text-align: center;
     margin: 10px auto;
     font-size: 30px;
+    text-shadow:10px 10px 10px var(--main--color);
+    font-family: 'Marhey', sans-serif;
    }
 .parts div h4{
 text-align: center;
@@ -470,7 +476,7 @@ margin: 10px;
     height: 100%;
     top: 0;
     left: 0;
-    background-color: rgba(13, 10, 10, 0.37);
+    background-color: rgba(13, 10, 10, 0);
     z-index: 2;
     text-align: center;
 }
@@ -496,7 +502,7 @@ margin: 10px;
     font-size: 110px;
     line-height: 1.3;
    font-weight: bold;
-   text-shadow:10px 10px 10px rgb(5, 2, 39);
+   text-shadow:10px 10px 10px rgb(2, 1, 13);
  }
 
  .sale .photoSale {
@@ -510,34 +516,49 @@ margin: 10px;
  }
 
   /* end sale  */
-  .partePhone {
+.partePhone,
+.partePhone2,
+.partePhone3 {
     position: relative;
     width: 100%;
-    min-height: 650px;
+    min-height: 750px;
     padding-top: 200px;
-    background-color: #fff;
+    background-color: var(--main--color);
   }
-  .partePhone .title{
+  .partePhone .title,
+   .partePhone2 .title,
+   .partePhone3 .title{
     position: absolute;
     width: 100%;
-    top: 50px;
+    top: 30px;
     left: 50%;
     transform: translateX(-50%);
-    color: #264653;
+    color: #fff;
     text-align: center;
+
   }
-  .partePhone .title h2{
- font-size: 30px;
+  .partePhone .title h2,
+  .partePhone2 .title h2,
+  .partePhone3 .title h2 {
+    text-shadow:10px 10px 10px rgb(2, 1, 13);
+    font-family: 'Marhey', sans-serif;
+ font-size: 35px;
  font-weight: bold;
  margin: 10px;
 
   }
-  .partePhone .title p{
-    font-size: 20px;
-   margin: 10px;
+  .partePhone .title p,
+   .partePhone2 .title p,
+   .partePhone3 .title p{
+    text-shadow:10px 10px 10px rgb(2, 1, 13);
+    font-family: 'Marhey', sans-serif;
+    font-size: 25px;
+   margin:0 0 20px 0;
    
      }
-  .partePhone a{
+  .partePhone a,  
+  .partePhone2 a,
+  .partePhone3 a{
  text-decoration: none;
 
   }
@@ -546,7 +567,8 @@ margin: 10px;
     width: 300px;
     border-radius: 10px;
     overflow: hidden;
-    background-color: aquamarine;
+    background-color: #fff;
+    
 }
 .phoneSlider {
     width: 100%;
@@ -570,7 +592,7 @@ box-sizing: border-box;
     align-items: center;
     padding: 10px 20px;
     box-sizing: border-box;
-    background-color: var(--main--color);
+    background-color: #264653;
 }
 .type {
     margin: auto;

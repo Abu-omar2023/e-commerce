@@ -41,14 +41,30 @@ $('.intro .rightIntro').animate({
  } 
 setInterval(slider,3000);
 
-$('.sale .introSale').animate({
-    marginRight:'0',
-  
-},800);
-$('.sale .photoSale').animate({
-    marginLeft:'0',
-  
-},800);
+
+
+$(window).scroll(function(){
+    if($(window).scrollTop() >= $('.sale .introSale').offset().top - 250){
+        
+        $('.sale .introSale').animate({
+            marginRight:'0',
+          
+        },800);
+        
+    }
+    });
+    $(window).scroll(function(){
+        if($(window).scrollTop() >= $('.sale .photoSale').offset().top - 250){
+            
+            $('.sale .photoSale').animate({
+                marginLeft:'0',
+              
+            },800);
+            
+        }
+        });
+
+
 
 $('#autoWidth').lightSlider({
     autoWidth:true,
@@ -71,37 +87,51 @@ $('#autoWidth3').lightSlider({
         $('#autoWidth3').removeClass('cS-hidden');
     }
 });
-
 $(window).scroll(function(){
-    if($(window).scrollTop() >= $('.bodyBackground2').offSet().top() ){
+    if($(window).scrollTop() >= $('.partePhone').offset().top){
         
-        $('.bodyImg').src="img/pexels-marek-levak-2265487.jpg"
+        $('.bodyImg').css({
+           
+            'background-image': 'url(../img/img-1946.jpg)'
+      
+        },10) ;
         
     }else{
+       
+    }
+    });
+
+
+$(window).scroll(function(){
+    if($(window).scrollTop() >= $('.partePhone2').offset().top){
         
-            
-        }
-    })
+        $('.bodyImg').css({
+           
+            'background-image': 'url(../img/pexels-marek-levak-2265487.jpg)'
+      
+        },10) ;
+        
+    }else{
+       
+    }
+    });
+
+$(window).scroll(function(){
+    if($(window).scrollTop() >= $('.partePhone3').offset().top){
+        
+        $('.bodyImg').css({
+           
+            'background-image': 'url(../img/pexels-jonas-svidras-576739.jpg)'
+      
+        },10) ;
+        
+    }
+    });
 
 
 
 
-//  function automaticSlide(){
-//     var firstIndex=0;
-//     var pics;
-//     const imgSlid= $('.slid');
-//     for(pics=0; pics<imgSlid.length(); pics++){
-//         imgSlid[pics].style.css({display:'none'});
-//     }
-//     firstIndex++;
-//     if(firstIndex > imgSlid.length()){
-//         firstIndex =1;
-//     }
-//     imgSlid[firstIndex -1].style.css({display:'block'});
-//     automaticSlide()
-//  }
 
-//  automaticSlide()
 
 
 
