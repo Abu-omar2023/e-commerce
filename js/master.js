@@ -99,7 +99,7 @@ $(window).scroll(function(){
         
         $('.bodyImg').css({
            
-            'background-image': 'url(../img/img-1946.jpg)'
+            'background-image': 'url(./img/img-1946.jpg)'
       
         },10) ;
         
@@ -114,7 +114,7 @@ $(window).scroll(function(){
         
         $('.bodyImg').css({
            
-            'background-image': 'url(../img/pexels-marek-levak-2265487.jpg)'
+            'background-image': 'url(./img/pexels-marek-levak-2265487.jpg)'
       
         },10) ;
         
@@ -128,7 +128,7 @@ $(window).scroll(function(){
         
         $('.bodyImg').css({
            
-            'background-image': 'url(../img/pexels-jonas-svidras-576739.jpg)'
+            'background-image': 'url(./img/pexels-jonas-svidras-576739.jpg)'
       
         },10) ;
         
