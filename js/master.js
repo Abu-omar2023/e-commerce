@@ -16,6 +16,11 @@ $(document).ready(function(){
             show();
         });
 };
+
+
+
+
+
 $('.intro .slider').animate({
     left: '0',
   
