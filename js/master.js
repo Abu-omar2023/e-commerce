@@ -49,22 +49,22 @@ setInterval(slider,3000);
 
 
 $(window).scroll(function(){
-    if($(window).scrollTop() >= $('.sale .introSale').offset().top - 250){
+    if($(window).scrollTop() >= $('.sale .introSale').offset().top - 150){
         
         $('.sale .introSale').animate({
             marginRight:'0',
           
-        },800);
+        },1000);
         
     }
     });
     $(window).scroll(function(){
-        if($(window).scrollTop() >= $('.sale .photoSale').offset().top - 250){
+        if($(window).scrollTop() >= $('.sale .photoSale').offset().top - 150 ){
             
             $('.sale .photoSale').animate({
                 marginLeft:'0',
               
-            },800);
+            },1000);
             
         }
         });
@@ -139,6 +139,17 @@ $(window).scroll(function(){
         
     }
     });
+    $(window).scroll(function(){
+        if($(window).scrollTop() >= $('.partePhone4').offset().top){
+            
+            $('.bodyImg').css({
+               
+                'background-image': 'url(./img/pexels-max-fischer-5872364.jpg)'
+          
+            },10) ;
+            
+        }
+        });
 
 
 
