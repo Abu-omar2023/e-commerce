@@ -625,20 +625,109 @@
     <img class="partImg" src="img/pngwing.com (27).png" alt="">
     <div class="begsale">
         <div class="postar">
-
+            <h3>لفتره محدوده</h3>
+            <p>خصومات وتخفيضات على منتجاتنا</p>
+            <img src="img/pngwing.com (14).png" alt="">
+            <img class="pos-phone" src="img/16-02-21-284783279-PhotoRoom.png-PhotoRoom-PhotoRoom.png-PhotoRoom.png" alt="">
+            <img class="pos-watche" src="img/iWatch-PNG-Image.png" alt="">
+            <div id="number">
+                        
+            </div>
+        
         </div>
         <div class="begphoto">
-
+            <img src="img/pngwing.com (14).png" alt="">
+            <img class="b-phone" src="img/Oppo-Find-N3-Flip-2-600x600-PhotoRoom.png-PhotoRoom.png" alt="">
+            <div class="bns">
+                <h4>Oppo Find N3 Flip</h4>
+                <div class="stars"><i style="color: yellow;" class="fa-solid fa-star"></i><i style="color: yellow;" class="fa-solid fa-star"></i><i style="color: yellow;" class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i></div>
+                <div class="del">
+                    <span>3500 ر.س</span>
+                    <span><del>4200 ر.س</del></span>
+                </div>
+            </div>
         </div>
         <div class="smallphoto">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
+            <div class="small-bns">
+                <img src="img/pngwing.com (14).png" alt="">
+                <img class="b-phone" src="img/Realme-GT-5-Pro-2-600x600-PhotoRoom.png-PhotoRoom.png" alt="">
+                <div class="bns">
+                    <h4>Realme GT 5 Pro</h4>
+                    <div class="stars"><i style="color: yellow;" class="fa-solid fa-star"></i><i style="color: yellow;" class="fa-solid fa-star"></i><i style="color: yellow;" class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i></div>
+                    <div class="del">
+                        <span>1500 ر.س</span>
+                        <span><del>1700 ر.س</del></span>
+                    </div>
+                </div>
+            </div>
+            <div class="small-bns">
+                <img src="img/pngwing.com (14).png" alt="">
+                <img class="b-phone" src="img/Oppo-Find-N3-600x600-PhotoRoom.png-PhotoRoom.png" alt="">
+                <div class="bns">
+                    <h4>Oppo Find N3</h4>
+                    <div class="stars"><i style="color: yellow;" class="fa-solid fa-star"></i><i style="color: yellow;" class="fa-solid fa-star"></i><i style="color: yellow;" class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i></div>
+                    <div class="del">
+                        <span>2300 ر.س</span>
+                        <span><del>2700 ر.س</del></span>
+                    </div>
+                </div>
+            </div>
+            <div class="small-bns">
+                <img src="img/pngwing.com (14).png" alt="">
+                <img class="b-phone" src="img/OnePlus-12-2-PhotoRoom.png-PhotoRoom.png" alt="">
+                <div class="bns">
+                    <h4>OnePlus 12</h4>
+                    <div class="stars"><i style="color: yellow;" class="fa-solid fa-star"></i><i style="color: yellow;" class="fa-solid fa-star"></i><i style="color: yellow;" class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i></div>
+                    <div class="del">
+                        <span>1850 ر.س</span>
+                        <span><del>2200 ر.س</del></span>
+                    </div>
+                </div>
+            </div>
+            <div class="small-bns">
+                <img src="img/pngwing.com (14).png" alt="">
+                <img class="b-phone" src="img/Redmi-K70E-3-600x600-PhotoRoom.png-PhotoRoom.png" alt="">
+                <div class="bns">
+                    <h4>Redmi K70E</h4>
+                    <div class="stars"><i style="color: yellow;" class="fa-solid fa-star"></i><i style="color: yellow;" class="fa-solid fa-star"></i><i style="color: yellow;" class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i></div>
+                    <div class="del">
+                        <span>1100 ر.س</span>
+                        <span><del>1400 ر.س</del></span>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="small-bns"></div>
+            <div class="small-bns" ></div>
+            <div class="small-bns" ></div> -->
         </div>
     </div>
 </div>
 <!-- end begsale -->
+
+<script>
+    window.onscroll = function (){
+
+        let number = document.getElementById("number")
+        let counter = 0;
+        let postar = document.querySelector(".postar")
+        if (window.scrollY >= postar.offsetTop){
+            setInterval(() => {
+if(counter == 50){
+    clearInterval;
+}else{
+    counter += 1;
+    number.innerHTML = counter + "%" + "</br>" + "off";
+}
+
+}, 30);
+
+        }
+
+
+    }
+  
+
+        </script>
      <script src="js/jquery-3.7.1.min.js"></script>
      <script type="text/javascript" src="js/master.js"></script>
      <script type="text/javascript" src="js/lightslider.js"></script>
