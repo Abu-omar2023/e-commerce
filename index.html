@@ -23,11 +23,23 @@
 <link href="https://fonts.googleapis.com/css2?family=Fuggles&family=Noto+Kufi+Arabic:wght@100;200;300;400;500;600;700&family=Rubik:wght@300;400;500;600;700&display=swap" rel="stylesheet"> -->
 </head>
     <body>
+          <!--start theams color -->
+    <div class="theam-colors">
+        <i class="fa fa-gear"></i>
+        <ul class="colors-list">
+            <li class="active" data-color="orangered"></li>
+            <li data-color="#2f80ed"></li>
+            <li data-color="red"></li>
+            <li data-color="#2a9d8f"></li>
+        </ul>
+    </div>    
+    <!--end theams color -->
         <div class="bodyImg">
             <!-- <img src="img/img-1946.jpg" alt=""> -->
         </div>
         <!-- start header -->
      <div class="header">
+        <div class="scrolltop"><i class="fa-solid fa-angles-up"></i></div>
         <div class="containerNav1">
             <div class="leftNav ">
                 <div class="socialmedia">
@@ -37,7 +49,7 @@
                 <div class="car"><i class="fa-solid fa-truck"></i>  الشحن والتوصيل</div>
                 <div class="rightNav">
                     <div class="email">info@Domain.com.sa <i class="fa-solid fa-envelope"></i> </div>
-                    <div class="tel"> 0123456789 <i class="fa-solid fa-phone"></i></div>
+                    <div class="tel"> +661856425448<i class="fa-solid fa-phone"></i></div>
                 </div>
 
             </div>
@@ -53,15 +65,15 @@
                 <div>SR 05.5 <i class="fa-solid fa-cart-shopping"></i></div>
                 <div class="name" > <i class="fa-solid fa-circle-user"></i> عصام عبدالله</i></div>
             </div>
-            <div class="navbar">
+            <div class="navbar" id="navbar">
                 <ul>
-                    <li><a href="#" class="links">الرئيسيه</a></li>
-                    <li><a href="#">الهواتف المحموله</a></li>
-                    <li><a href="#">الاجهزه اللوحيه</a></li>
-                    <li><a href="#">الساعات الرقميه</a></li>
-                    <li><a href="#">سماعات بلوتوث</a></li>
-                    <li><a href="#">عروض وتخفيضات</a></li>
-                    <li><a href="#">المدونه</a></li>
+                    <li><a href="#navbar" class="links">الرئيسيه</a></li>
+                    <li><a href="#phones">الهواتف المحموله</a></li>
+                    <li><a href="#ipads">الاجهزه اللوحيه</a></li>
+                    <li><a href="#digit">الساعات الرقميه</a></li>
+                    <li><a href="#bods">سماعات بلوتوث</a></li>
+                    <li><a href="#sales">عروض وتخفيضات</a></li>
+                    <li><a href="#connact">تواصل معنا</a></li>
                 </ul>
             </div>
         </div>
@@ -174,7 +186,7 @@
 
   <!-- start phoneProducts -->
 
-<div class="partePhone">
+<div class="partePhone" id="phones">
     <img class="partImg" src="img/pngwing.com (27).png" alt="">
     <div class="title">
     <h2>الهواتف المحموله</h2>
@@ -282,7 +294,7 @@
   <!-- body background -->
 <!-- start ipad  -->
 
-<div class="partePhone2">
+<div class="partePhone2" id="ipads">
     <img class="partImg" src="img/pngwing.com (27).png" alt="">
     <div class="title">
     <h2>الاجهزه اللوحيه</h2>
@@ -392,7 +404,7 @@
 <!-- body background -->
 <!-- start watches  -->
 
-<div class="partePhone3">
+<div class="partePhone3" id="digit" >
 <img class="partImg" src="img/pngwing.com (27).png" alt="">
     <div class="title">
     <h2>قسم الساعات</h2>
@@ -505,7 +517,7 @@
 
 <!-- start earbods  -->
 
-<div class="partePhone4">
+<div class="partePhone4" id="bods" >
     <img class="partImg" src="img/pngwing.com (27).png" alt="">
     <div class="title">
     <h2>سماعات بلوتوث</h2>
@@ -617,7 +629,7 @@
 <div class="bodyBackground"></div>
 <!-- body background -->
 <!-- start begsale -->
-<div class="container3">
+<div class="container3" id="sales" >
     <div class="title">
         <h2>عروض وتخفيضات</h2>
         <p>استمتع بأقوى العروض لدينا</p>
@@ -696,13 +708,42 @@
                     </div>
                 </div>
             </div>
-            <!-- <div class="small-bns"></div>
-            <div class="small-bns" ></div>
-            <div class="small-bns" ></div> -->
+      
         </div>
     </div>
 </div>
 <!-- end begsale -->
+<!-- start footer --> 
+<div class="footer" id="connact" >
+    <div class="contact-info" id="CONNECT">
+        <div class="about-services">
+            <h3>الاستفسار عن الخدمات</h3>
+            <form>
+                <input type="email" placeholder="البريد الالكترونى">
+                <input type="number" placeholder="رقم التليفون">
+                <input type="submit" value="أرسل الان">
+            </form>
+        </div>
+        <div class="contact-content">
+            <h3>معلومات للتواصل</h3>
+            <div><i class="fa-solid fa-location-dot"></i><p> حي البوادي - شارع قريش تقاطع شارع الخطيب التبريزي - جده</p></div>
+            <div><i class="fa-solid fa-phone"></i><p>+661856425448</p></div>
+            <button class="bar"> <span></span> شاهدنا على الخريطه </button>
+            
+        </div>
+    </div>
+    <div class="footer-content">
+        <div><p>copyright  &#169; E-Commerce. All rights reserved</p></div>
+        <div class="follow-us"><p>تواصل معنا:</p><a href="#"><i class="fa-brands fa-linkedin-in"></i></a><a href="#"><i class="fa-brands fa-twitter"></i></a><a href="#"><i class="fa-brands fa-yahoo"></i><a href="#"><i class="fa-brands fa-whatsapp"></i></a></div>
+    </div>
+</div>
+
+<div class="map">
+    <img src="/img/34576539_l-1450x1064.jpg" alt="">
+    <button>اغلاق</button>
+</div>
+
+<!-- end footer -->
 
 <script>
     window.onscroll = function (){
@@ -727,6 +768,36 @@ if(counter == 50){
     }
   
 
+        </script>
+        <script>
+            //start theam colors
+let btnColor = document.querySelector('.theam-colors .fa-gear');
+
+
+btnColor.onclick = function() {
+    let theamDiv = document.querySelector(".theam-colors");
+    this.classList.toggle("fa-spin");
+    theamDiv.classList.toggle("open");
+}
+//switch colors 
+let colorsli = document.querySelectorAll(".colors-list li");
+colorsli.forEach(li => {
+    li.addEventListener("click", (e) => {
+        //set on root
+        document.documentElement.style.setProperty("--main--color" ,e.target.dataset.color);
+
+        // set color on local storage
+
+        localStorage.setItem("color_option", e.target.dataset.color);
+        //remove active class from all children
+        e.target.parentElement.querySelectorAll(".active").forEach(ele => {
+            ele.classList.remove("active");
+        });
+        e.target.classList.add("active")
+    });
+
+
+});
         </script>
      <script src="js/jquery-3.7.1.min.js"></script>
      <script type="text/javascript" src="js/master.js"></script>

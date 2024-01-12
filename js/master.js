@@ -7,7 +7,28 @@ $(document).ready(function(){
     
     });
     
-
+    $("button.bar").hover(function(){
+        $("button.bar span").animate({
+            "width":"100%"
+        },150)
+    },function(){
+        $("button.bar span").animate({
+            "width":"0"
+        },150)
+    });
+    $(window).scroll(function(){
+        if($(window).scrollTop() >= 600){
+            $('.scrolltop').fadeIn()
+        }
+        else{
+            $('.scrolltop').fadeOut()
+        }
+       });
+       $('.scrolltop').click(function(){
+        $('html, body').animate({
+            scrollTop : 0
+        })
+       });
     show();
 
     function show(){
@@ -68,8 +89,6 @@ $(window).scroll(function(){
             
         }
         });
-
-
 
 $('#autoWidth').lightSlider({
     autoWidth:true,
@@ -152,7 +171,12 @@ $(window).scroll(function(){
         });
 
 
-
+$('.contact-content button.bar').click(function(){
+    $('.map').fadeIn(500);
+});
+$('.map button').click(function(){
+    $('.map').fadeOut(500);
+})
 
 
 
