@@ -27,10 +27,10 @@
     <div class="theam-colors">
         <i class="fa fa-gear"></i>
         <ul class="colors-list">
-            <li class="active" data-color="orangered"></li>
+            <li class="active" data-color="#028174"></li>
             <li data-color="#2f80ed"></li>
             <li data-color="red"></li>
-            <li data-color="#2a9d8f"></li>
+            <li data-color="green"></li>
         </ul>
     </div>    
     <!--end theams color -->
@@ -59,11 +59,9 @@
             <div class="search">
                 <div class="logo"><i class="fa-solid fa-feather-pointed"></i> Elextra</div>
                 <div><input type="search" placeholder="ادخل كلمة البحث"><i class="fa-solid fa-magnifying-glass"></i></div>
-                <div class="ar">
-                   العربيه <i class="fa-solid fa-sort-down"></i>
-                </div>
+               
                 <div>SR 05.5 <i class="fa-solid fa-cart-shopping"></i></div>
-                <div class="name" > <i class="fa-solid fa-circle-user"></i> عصام عبدالله</i></div>
+               
             </div>
             <div class="navbar" id="navbar">
                 <ul>
@@ -75,6 +73,22 @@
                     <li><a href="#sales">عروض وتخفيضات</a></li>
                     <li><a href="#connact">تواصل معنا</a></li>
                 </ul>
+            </div>
+            <div class="hiden-nav">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="sacand-nav">
+                <UL class="link" >
+                    <li><a href="#navbar" class="link2">الرئيسيه</a></li>
+                    <li><a href="#phones">الهواتف المحموله</a></li>
+                    <li><a href="#ipads">الاجهزه اللوحيه</a></li>
+                    <li><a href="#digit">الساعات الرقميه</a></li>
+                    <li><a href="#bods">سماعات بلوتوث</a></li>
+                    <li><a href="#sales">عروض وتخفيضات</a></li>
+                    <li><a href="#connact">تواصل معنا</a></li>
+                </UL>
             </div>
         </div>
      </div>
@@ -770,6 +784,22 @@ if(counter == 50){
 
         </script>
         <script>
+            let mainColor = localStorage.getItem("color_option");
+
+if (mainColor !== null) {
+    document.documentElement.style.setProperty("--main--color" ,mainColor);
+     
+    //check fot active class
+    document.querySelectorAll(".colors-list li").forEach(ele => {
+        ele.classList.remove("active");
+        if (ele.dataset.color === mainColor) {
+            ele.classList.add("active");
+           }
+    });
+  
+
+}
+
             //start theam colors
 let btnColor = document.querySelector('.theam-colors .fa-gear');
 
