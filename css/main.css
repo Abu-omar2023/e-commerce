@@ -23,6 +23,21 @@ font-family: 'Rubik', sans-serif;
     background-repeat: no-repeat;
     /* display: none; */
 }
+@media (max-width: 678px){
+   
+    .bodyImg {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        background-image: url(../img/img-1946.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        /* display: none; */
+    }
+ 
+}
 button.bar span {
     width: 0;
     height: 100%;
@@ -156,19 +171,18 @@ position: relative;
       justify-content: space-between;
       direction: rtl;
       align-items: center;
-      padding: 10px;
+      padding: 10px 0 0 20px;
+      
     }
-    .containerNav2 .search .name{
-      width: 150px;
-      background-color: var(--main--color);
-      padding: 5px;
-      border-radius: 5px;
-      text-align: center;
-      font-size: 18px;
-      color: white;
-      margin-left: 60px;
-      box-shadow:5px 5px 10px #264653 ;
-      }
+.count-up {
+    width: 20px;
+    height: 20px;
+    background-color: var(--main--color);
+    border-radius: 50%;
+    text-align: center;
+    color: #fff;
+    margin-right: 50px;
+}
     .search div {
         position: relative;
     }
@@ -289,7 +303,7 @@ position: relative;
         position: absolute;
         top: 10px;
         right: 0;
-        border: 15px solid ;
+        border: 16px solid ;
         border-color: transparent transparent #111111e9 transparent;
         display: block; 
      } 
@@ -370,6 +384,21 @@ position: relative;
     text-align: center;
     position: relative;
 }
+@media (max-width: 678px){
+   
+    .intro {
+    
+        overflow: hidden;
+        width: 100%;
+        min-height:900px;
+        background-color: var(--main--color);
+        flex-direction: column-reverse;
+        text-align: center;
+        position: relative;
+    }
+
+}
+
 @media (max-width: 991px){
    
     
@@ -388,6 +417,20 @@ position: relative;
    right: 0;
   
 }
+@media (max-width: 678px){
+   
+    
+    .intro .leftImeg{
+        position: absolute;
+        z-index: 1;
+        width:180%;
+      top: 0;
+        right: 0;
+       
+     }
+    
+   
+}
 .intro .topImeg{
     position: absolute;
     z-index: 3;
@@ -403,6 +446,18 @@ position: relative;
         z-index: 3;
         width:100%;
       top:-35%;
+        right: 0;
+       
+     }
+ 
+}
+@media (max-width: 678px){
+   
+    .intro .topImeg{
+        position: absolute;
+        z-index: 3;
+        width:150%;
+      top:-20%;
         right: 0;
        
      }
@@ -428,13 +483,26 @@ position: relative;
     z-index: 3;
     
 }
+
 @media (max-width: 991px){
    
     .intro .rightIntro {
-       top: 65%;
+       top: 70%;
          
      }
  
+}
+@media (max-width: 678px){
+   
+  
+    .intro .rightIntro {
+        width:100%;
+         position: absolute;
+         top: 350px;
+         right: -100%;
+         z-index: 3;
+         
+     }
 }
 .intro .rightIntro h1{
    color: white;
@@ -448,6 +516,13 @@ font-family: 'Marhey', sans-serif;
    
     .intro .rightIntro  h1{
        font-size: 50px;
+    } 
+ 
+}
+@media (max-width: 678px){
+   
+    .intro .rightIntro  h1{
+       font-size: 70px;
     } 
  
 }
@@ -491,6 +566,23 @@ font-family: 'Marhey', sans-serif;
   color: #264653;
   font-weight: bold;
  }
+ @media (max-width: 678px){
+   
+    .intro .rightIntro button{
+        width: 180px;
+        padding: 5px;
+        border-radius: 50px;
+        border: none;
+        margin-top: 15px;
+        cursor: pointer;
+        font-family: 'Noto Kufi Arabic', sans-serif;
+        font-size: 20px;
+        background-color: yellow;
+        color: #264653;
+        font-weight: bold;
+       }
+ 
+}
  .intro .rightIntro button i{
   color: var(--main--color);
    }
@@ -499,6 +591,17 @@ font-family: 'Marhey', sans-serif;
    position: relative;
    left: -100%;
    z-index: 3;
+}
+@media (max-width: 678px){
+   
+    .intro .slider  {
+        width: 100%;
+       position: relative;
+       left: -100%;
+       bottom: 230px;
+       z-index: 3;
+    }
+ 
 }
 .intro .slider img {
     position: absolute;
@@ -521,12 +624,12 @@ font-family: 'Marhey', sans-serif;
         transition: 1s;
     }
 }
-@media (max-width: 690px){
+@media (max-width: 678px){
    
     .intro .slider img {
         position: absolute;
-        width: 320px;
-        margin-left: 70px;
+        width: 300px;
+        margin-left: 0;
         top: 50%;
         left: -100%;
         transform: translate(-50%, -50%);

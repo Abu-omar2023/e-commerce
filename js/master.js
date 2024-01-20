@@ -48,6 +48,7 @@ $('.intro .slider').animate({
 },800)
 $('.intro .rightIntro').animate({
     right: '0',
+    
     margin: '10px auto'
 },800);
 
