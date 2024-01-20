@@ -231,16 +231,7 @@ position: relative;
             position: relative;
             cursor: pointer;
         }
-        .ar::after {
-            
-            content: "";
-            position: absolute;
-            width: 1px;
-            background-color: #264653;
-            height: 100%;
-            top:0;
-            left: -15px;
-        }
+  
     .navbar {
         margin: 5px auto;
         min-height: 80px;
@@ -674,7 +665,7 @@ font-family: 'Marhey', sans-serif;
     }
 }
 .container1 div{
-    width: calc(85% / 4);
+    width: calc(90% / 4);
     min-height: 80px;
     margin: 10px;
     display: flex;
@@ -690,7 +681,24 @@ font-family: 'Marhey', sans-serif;
 @media (max-width: 991px){
    
     .container1 div{
-        width: calc(75% / 2);
+        width: calc(80% / 2);
+        min-height: 80px;
+        /* margin: 10px; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        border-radius: 5px;
+        cursor: pointer;
+        position: relative;
+        z-index: 2;
+        padding: 10px 0;
+    }
+}
+@media (max-width: 678px){
+   
+    .container1 div{
+        width: 70%;
         min-height: 80px;
         /* margin: 10px; */
         display: flex;
@@ -726,23 +734,52 @@ font-family: 'Marhey', sans-serif;
         color: var(--main--color);
         transition: .5s;
     }
+    @media (max-width: 678px){
+   
+        .container1 div i {
+            position: absolute;
+            right: 10px;
+            font-size: 45px;
+            color: var(--main--color);
+            transition: .5s;
+        }
+    }
     .container1 div h4 {
         position: absolute;
         right: 60px;
-        top: 10px;
-        font-size: 13px;
+        top: 20px;
+        font-size: 16px;
+    }
+    @media (max-width: 678px){
+   
+        .container1 div h4 {
+            position: absolute;
+            right: 90px;
+            top: 20px;
+            font-size: 18px;
+        }
     }
 
     .container1 div p {
         position: absolute;
         right: 60px;
-        top: 35px;
-        font-size: 10px;
+        top: 45px;
+        font-size: 12px;
         padding: 5px;
         line-height: 1.7;
     }
 
-
+    @media (max-width: 678px){
+   
+        .container1 div p {
+            position: absolute;
+            right: 90px;
+            top: 45px;
+            font-size: 14px;
+            padding: 5px;
+            line-height: 1.7;
+        }
+    }
 /* end services */
     
    /* start patation */
@@ -765,7 +802,7 @@ font-family: 'Marhey', sans-serif;
     .parts {
         position: relative;
         width:100%;
-        min-height: 450px;
+        min-height: 600px;
         display: flex;
         justify-content:space-around;
         background-color: #fff;
@@ -844,7 +881,7 @@ margin: 10px;
         margin: auto;
     }}
  
-}
+
 .parts div div:hover{
  
     transform: rotate(360deg);
@@ -1123,6 +1160,18 @@ transition: all ease 0.3s;
     background-color: var(--main--color);
    z-index: 1;
 }
+@media (max-width: 767px){
+    .container3 {
+        
+        position: relative;
+        width: 100%;
+        min-height: 1600px;
+        padding-top: 200px;
+        background-color: var(--main--color);
+       z-index: 1;
+    }
+}
+
 .container3 img.partImg{
     position: absolute;
     width: 100%;
@@ -1167,13 +1216,36 @@ transition: all ease 0.3s;
     border-radius: 20px;
     background-color: #fff;
     display: flex;
+    
     justify-content: space-around;
+}
+@media (max-width: 767px){
+    .begsale {
+        padding-top: 10px;
+        display: block;
+        width:80%;
+        min-height: 1550px;
+        margin:  auto;
+        border-radius: 10px;
+    }
+    
+   
 }
 .begsale div{
     width: calc(95% / 3);
     margin:  auto;
     height: 95%;
     border-radius: 10px;
+}
+@media (max-width: 767px){
+    .begsale div{
+        width: 95%;
+        margin: 10px auto;
+        height: calc(95% / 3);
+        border-radius: 10px;
+    }
+    
+   
 }
 
 .begsale .postar {
@@ -1183,6 +1255,17 @@ transition: all ease 0.3s;
     background-image: linear-gradient(45deg, #0d4671, var(--main--color));
     border-radius: 10px;
     overflow: hidden;
+}
+@media (max-width: 767px){
+    .begsale .postar {
+        position: relative;
+        margin:  auto;
+        height: calc(95% / 3);
+        background-image: linear-gradient(45deg, #0d4671, var(--main--color));
+        border-radius: 10px;
+        overflow: hidden;
+    }
+   
 }
 .begsale .postar h3 {
     margin:  auto;
