@@ -140,7 +140,7 @@ position: relative;
     background-color: white;
     height: 100%;
     top:0;
-    left: -15px;
+    left: -25px;
     
     }
     .socialmedia {
@@ -423,7 +423,7 @@ position: relative;
     .intro .leftImeg{
         position: absolute;
         z-index: 1;
-        width:180%;
+        width:220%;
       top: 0;
         right: 0;
        
@@ -522,7 +522,7 @@ font-family: 'Marhey', sans-serif;
 @media (max-width: 678px){
    
     .intro .rightIntro  h1{
-       font-size: 70px;
+       font-size: 55px;
     } 
  
 }
@@ -569,14 +569,14 @@ font-family: 'Marhey', sans-serif;
  @media (max-width: 678px){
    
     .intro .rightIntro button{
-        width: 180px;
+        width: 150px;
         padding: 5px;
         border-radius: 50px;
         border: none;
         margin-top: 15px;
         cursor: pointer;
         font-family: 'Noto Kufi Arabic', sans-serif;
-        font-size: 20px;
+        font-size: 16px;
         background-color: yellow;
         color: #264653;
         font-weight: bold;
@@ -628,7 +628,7 @@ font-family: 'Marhey', sans-serif;
    
     .intro .slider img {
         position: absolute;
-        width: 300px;
+        width: 270px;
         margin-left: 0;
         top: 50%;
         left: -100%;
@@ -657,6 +657,22 @@ font-family: 'Marhey', sans-serif;
     direction: rtl;
     transition: .3s;
 }
+@media (max-width: 991px){
+   
+    .container1 {
+        width: 100%;
+        min-height: 250px;
+        background-color: #ccc;
+        display: flex;
+        justify-content: center;
+        text-align: right;
+        flex-wrap: wrap;
+        color: #264653;
+        align-items: center;
+        direction: rtl;
+        transition: .3s;
+    }
+}
 .container1 div{
     width: calc(85% / 4);
     min-height: 80px;
@@ -671,6 +687,24 @@ font-family: 'Marhey', sans-serif;
     z-index: 2;
     
 }
+@media (max-width: 991px){
+   
+    .container1 div{
+        width: calc(75% / 2);
+        min-height: 80px;
+        /* margin: 10px; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        border-radius: 5px;
+        cursor: pointer;
+        position: relative;
+        z-index: 2;
+        padding: 10px 0;
+    }
+}
+
 .container1 div:hover  {
    
     background-color: var(--main--color);
@@ -696,12 +730,16 @@ font-family: 'Marhey', sans-serif;
         position: absolute;
         right: 60px;
         top: 10px;
+        font-size: 13px;
     }
+
     .container1 div p {
         position: absolute;
         right: 60px;
-        top: 40px;
-        font-size: 14px;
+        top: 35px;
+        font-size: 10px;
+        padding: 5px;
+        line-height: 1.7;
     }
 
 
@@ -722,8 +760,26 @@ font-family: 'Marhey', sans-serif;
     color: #264653;
     direction: rtl;
 }
+@media (max-width: 678px){
+   
+    .parts {
+        position: relative;
+        width:100%;
+        min-height: 450px;
+        display: flex;
+        justify-content:space-around;
+        background-color: #fff;
+        flex-wrap: wrap;
+        align-items: center;
+        margin:  auto;
+        padding-top: 100px;
+        color: #264653;
+        direction: rtl;
+    }
+ 
+}
 .parts h3.h3{
-    top: 50px;
+    top: 30px;
     left: 50%;
     transform: translateX(-50%);
     position: absolute;
@@ -735,6 +791,23 @@ font-family: 'Marhey', sans-serif;
     text-shadow:10px 10px 10px var(--main--color);
     font-family: 'Marhey', sans-serif;
    }
+   @media (max-width: 678px){
+   
+    .parts h3.h3{
+        top: 50px;
+        left: 50%;
+        transform: translateX(-50%);
+        position: absolute;
+        width: 100%;
+        height: 100px;
+        text-align: center;
+        margin: 10px auto;
+        font-size: 25px;
+        text-shadow:10px 10px 10px var(--main--color);
+        font-family: 'Marhey', sans-serif;
+       }
+ 
+}
 .parts div h4{
 text-align: center;
 margin: 10px;
@@ -752,6 +825,25 @@ margin: 10px;
     transition: .3s;
     cursor: pointer;
     margin: auto;
+}
+@media (max-width: 678px){
+   
+    .parts div div{
+        border-radius: 50%;
+        width: 50%;
+        width:110px;
+        height: 110px;
+        position: relative;
+        border-radius: 50%;
+        background-color: #fff;
+        overflow: hidden;
+        box-shadow: -1px 4px 5px var(--main--color);
+        transform: rotate(-22.5deg);
+        transition: .3s;
+        cursor: pointer;
+        margin: auto;
+    }}
+ 
 }
 .parts div div:hover{
  
