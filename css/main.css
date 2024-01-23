@@ -221,16 +221,7 @@ position: relative;
        right: -30px;
        bottom: 0;
         }
-        .ar {
-            width: 60px;
-            padding: 5px;
-            border-radius: 5px;
-            text-align: left;
-            border: 1px solid #264653;
-            font-weight: bold;
-            position: relative;
-            cursor: pointer;
-        }
+ 
   
     .navbar {
         margin: 5px auto;
@@ -754,9 +745,9 @@ font-family: 'Marhey', sans-serif;
    
         .container1 div h4 {
             position: absolute;
-            right: 90px;
+            right: 80px;
             top: 20px;
-            font-size: 18px;
+            font-size: 14px;
         }
     }
 
@@ -773,9 +764,9 @@ font-family: 'Marhey', sans-serif;
    
         .container1 div p {
             position: absolute;
-            right: 90px;
+            right: 80px;
             top: 45px;
-            font-size: 14px;
+            font-size: 12px;
             padding: 5px;
             line-height: 1.7;
         }
@@ -815,12 +806,12 @@ font-family: 'Marhey', sans-serif;
     }
  
 }
-.parts h3.h3{
+h3.h3{
+    width: 100%;
     top: 30px;
     left: 50%;
     transform: translateX(-50%);
     position: absolute;
-    width: 30%;
     height: 100px;
     text-align: center;
     margin: 10px auto;
@@ -831,11 +822,11 @@ font-family: 'Marhey', sans-serif;
    @media (max-width: 678px){
    
     .parts h3.h3{
+        width: 100%;
         top: 50px;
         left: 50%;
         transform: translateX(-50%);
         position: absolute;
-        width: 100%;
         height: 100px;
         text-align: center;
         margin: 10px auto;
@@ -854,31 +845,24 @@ margin: 10px;
     width:110px;
     height: 110px;
     position: relative;
-    border-radius: 50%;
     background-color: #fff;
     overflow: hidden;
     box-shadow: -1px 4px 5px var(--main--color);
     transform: rotate(-22.5deg);
     transition: .3s;
     cursor: pointer;
-    margin: auto;
+    margin:20px auto;
 }
+@media (max-width: 778px){
+   
+    .parts div {
+        width: calc(95% / 3);
+    }}
+ 
 @media (max-width: 678px){
    
-    .parts div div{
-        border-radius: 50%;
-        width: 50%;
-        width:110px;
-        height: 110px;
-        position: relative;
-        border-radius: 50%;
-        background-color: #fff;
-        overflow: hidden;
-        box-shadow: -1px 4px 5px var(--main--color);
-        transform: rotate(-22.5deg);
-        transition: .3s;
-        cursor: pointer;
-        margin: auto;
+    .parts div {
+ width: 50%;
     }}
  
 
@@ -910,6 +894,24 @@ margin: 10px;
     justify-content: space-between;
     align-items: center;
 }
+@media(max-width: 778px){
+    .sale {
+        direction: ltr;
+        overflow: hidden;
+        width: 100%;
+        min-height: 550px;
+        background-color: var(--main--color);
+        position: relative;
+        z-index: 5;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media(max-width: 778px){
+   
+}
 .sale img.saleImg {
     width: 100%;
     height: 100%;
@@ -931,18 +933,31 @@ margin: 10px;
 
 .sale .photoSale {
    width: 50%;
+   position: relative;
    /* top: 50%;
    left: 50%;
    transform: translate(-50%, -50%);
    position: absolute; */
 }
 .sale .introSale {
+    position: relative;
     width: 50%;
     margin-right: -150%;
     text-align: center;
     z-index: 4;
    
 
+ }
+ @media (max-width:778px){
+    .sale .introSale {
+        margin-top: 50px;
+        width: 90%;
+        margin-right: -200%;
+        text-align: center;
+        z-index: 4;
+       
+    
+     }
  }
  .sale .introSale h1{
     font-family: 'Marhey', sans-serif;
@@ -952,6 +967,27 @@ margin: 10px;
    font-weight: bold;
    text-shadow:10px 10px 10px rgb(2, 1, 13);
  }
+ @media(max-width:991px){
+    .sale .introSale h1{
+        font-family: 'Marhey', sans-serif;
+        color: white;
+        font-size: 90px;
+        line-height: 1.3;
+       font-weight: bold;
+       text-shadow:10px 10px 10px rgb(2, 1, 13);
+     }
+ }
+ @media(max-width:778px){
+    .sale .introSale h1{
+        font-family: 'Marhey', sans-serif;
+        color: white;
+        font-size: 80px;
+        line-height: 1.3;
+       font-weight: bold;
+       text-shadow:10px 10px 10px rgb(2, 1, 13);
+     }
+ }
+
 
  .sale .photoSale {
     width: 50%;
@@ -961,6 +997,34 @@ margin: 10px;
     z-index: 4;
    
 
+ }
+ @media(max-width:778px){
+
+    .sale .photoSale {
+        width: 85%;
+        margin-left: -200%;
+     }
+ }
+ @media(max-width:991px){
+
+    .sale .photoSale img{
+        width: 90%;
+    
+     }
+ }
+ @media(max-width:778px){
+
+    .sale .photoSale img{
+        width: 75%;
+    
+     }
+ }
+ @media(max-width:567px){
+
+    .sale .photoSale img{
+        width: 90%;
+    
+     }
  }
 
   /* end sale  */
@@ -1011,6 +1075,14 @@ margin: 10px;
  margin: 10px;
  z-index: 2;
   }
+  @media (max-width: 778px){
+    .partePhone .title h2,
+    .partePhone2 .title h2,
+    .partePhone3 .title h2,
+    .partePhone4 .title h2{
+ font-size: 25px;
+    }
+  }
   .partePhone .title p,
    .partePhone2 .title p,
    .partePhone3 .title p,
@@ -1021,6 +1093,14 @@ margin: 10px;
    margin:0 0 20px 0;
    z-index: 2;
      }
+     @media (max-width: 778px){
+        .partePhone .title p,
+        .partePhone2 .title p,
+        .partePhone3 .title p,
+        .partePhone4 .title p{
+       font-size: 20px;
+          }
+      }
   .partePhone a,  
   .partePhone2 a,
   .partePhone3 a,
