@@ -138,6 +138,19 @@ $('#autoWidth4').lightSlider({
     }
 });
 $(window).scroll(function(){
+    if($(window).scrollTop() >= $('.sale').offset().top){
+        
+        $('.bodyImg').css({
+           
+            'background-image': 'url(./img/pexels-cottonbro-studio-5081398.jpg)'
+      
+        },10) ;
+        
+    }else{
+       
+    }
+    });
+$(window).scroll(function(){
     if($(window).scrollTop() >= $('.partePhone').offset().top){
         
         $('.bodyImg').css({
