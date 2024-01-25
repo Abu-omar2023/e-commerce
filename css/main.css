@@ -73,7 +73,7 @@ button.bar span {
     width: 100%;
     height: 40px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     background-color: #264653;
     color: white;
 }
@@ -1382,6 +1382,9 @@ transition: all ease 0.3s;
     }
    
 }
+.begsale .postar img:first-child {
+    width: 10%;
+}
 .begsale .postar h3 {
     margin:  auto;
     text-align: center;
@@ -1411,6 +1414,16 @@ left: 50%;
 transform: translateX(-50%);
 
 }
+@media (max-width: 778px){
+    .begsale .postar img {
+        position: absolute;
+        width: 70%;
+        bottom:20px;
+        left: 50%;
+        transform: translateX(-50%);
+        
+        }
+}
 .begsale .postar img.pos-phone {
     position: absolute;
     width: 90%;
@@ -1419,12 +1432,69 @@ transform: translateX(-50%);
     transform: translateX(-50%);
     
     }
+    @media (max-width: 991px){
+        .begsale .postar img.pos-phone {
+            position: absolute;
+            width: 110%;
+            bottom:150px;
+            left: 50%;
+            transform: translateX(-50%);
+            
+            }
+    }
+      @media (max-width: 767px){
+            .begsale .postar img.pos-phone {
+                position: absolute;
+                width: 70%;
+                bottom:-10px;
+                left: 50%;
+                transform: translateX(-50%);
+                }
+        }
+        @media (max-width: 567px){
+            .begsale .postar img.pos-phone {
+                position: absolute;
+                width: 100%;
+               bottom: 140px;
+                left: 50%;
+                transform: translateX(-50%);
+                }
+        }
+
+
     .begsale .postar img.pos-watche {
         position: absolute;
         width: 100%;
         bottom:-10px;
         left: 50%;
         transform: translateX(-50%);
+        }
+        @media (max-width: 991px){
+            .begsale .postar img.pos-watche {
+                position: absolute;
+                width: 100%;
+                bottom:20px;
+                left: 50%;
+                transform: translateX(-50%);
+                }
+        }
+        @media (max-width: 767px){
+            .begsale .postar img.pos-watche {
+                position: absolute;
+                width: 70%;
+                bottom:-10px;
+                left: 50%;
+                transform: translateX(-50%);
+                }
+        }
+        @media (max-width: 567px){
+            .begsale .postar img.pos-watche {
+                position: absolute;
+                width: 100%;
+                bottom:-10px;
+                left: 50%;
+                transform: translateX(-50%);
+                }
         }
 
 
@@ -1472,17 +1542,43 @@ transform: translateX(-50%);
 }
 .begphoto img.b-phone {
     position: absolute;
-width: 80%;
+width: 90%;
 top:10px;
 left: 50%;
 transform: translateX(-50%);
 }
-
+@media (max-width:991px){
+    .begphoto img.b-phone {
+        position: absolute;
+    width: 110%;
+    top:30px;
+    left: 50%;
+    transform: translateX(-50%);
+    }
+}
+@media (max-width:778px){
+    .begphoto img.b-phone {
+        position: absolute;
+    width: 80%;
+    top:30px;
+    left: 50%;
+    transform: translateX(-50%);
+    }
+}
+@media (max-width:567px){
+    .begphoto img.b-phone {
+        position: absolute;
+    width: 100%;
+    top:30px;
+    left: 50%;
+    transform: translateX(-50%);
+    }
+}
 .begphoto .bns{
     position: absolute;
 width: 100%;
 height: 30%;
-bottom: 0;
+bottom: -10px;
 background-color: #26465379;
 align-items: center;
 padding: 10px 20px;
@@ -1490,7 +1586,7 @@ box-sizing: border-box;
 border: none;
 text-align: center;
 color: #fff;
-font-size: 25px;
+font-size: 20px;
 }
 .begphoto .bns .stars {
     width: 100%;
@@ -1503,7 +1599,7 @@ font-size: 25px;
    border: none;
    padding-bottom: 10px;
    max-height: 50px; 
-   font-size: 18px;
+   font-size: 16px;
    display: flex;
    justify-content: space-around;
 }
@@ -1529,12 +1625,21 @@ top:10px;
 left: 50%;
 transform: translateX(-50%);
 }
+@media (max-width:991px){
+    .small-bns img.b-phone {
+        position: absolute;
+    width: 110%;
+    top:10px;
+    left: 50%;
+    transform: translateX(-50%);
+    }
+}
 .small-bns .bns{
     position: absolute;
 width: 100%;
-height: 30%;
+height: 40%;
 bottom: 0;
-background-color: #26465379;
+background-color: #264653a3;
 align-items: center;
 padding: 10px 20px;
 box-sizing: border-box;
@@ -1542,6 +1647,22 @@ border: none;
 text-align: center;
 color: #fff;
 font-size: 12px;
+}
+@media (max-width:778px){
+    .small-bns .bns{
+        position: absolute;
+    width: 100%;
+    height: 40%;
+    bottom: -10px;
+    background-color: #264653a3;
+    align-items: center;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    border: none;
+    text-align: center;
+    color: #fff;
+    font-size: 12px;
+    }
 }
 .small-bns .bns .stars {
     width: 100%;
@@ -1557,11 +1678,11 @@ font-size: 12px;
 .small-bns .bns .del {
     width: 100%;
    border: none;
-   padding-bottom: 20px;
-   max-height: 50px; 
-   font-size: 12px;
+   padding-bottom: 40px;
+   max-height: 30px; 
+   font-size: 10px;
    display: flex;
-   justify-content: space-around;
+   justify-content: space-between;
 }
 
 /* end container3-begsale */
@@ -1605,6 +1726,12 @@ font-size: 12px;
         padding:  10px;
     }
 }
+@media (max-width:567px){
+    .about-services h3 {
+        font-size: 20px;
+        padding:  10px;
+    }
+}
 
 .contact-info .about-services {
     position: relative;
@@ -1615,7 +1742,7 @@ height: 200px;
 }
 @media (max-width:767px){
     .contact-info .about-services {
-        width: 70%;
+        width: 85%;
         height: 200px;
         background-color: #fff;
         padding: 20px;
@@ -1649,6 +1776,21 @@ height: 200px;
        bottom: 20px;
         cursor: pointer;
     }
+    @media (max-width: 567px){
+        .about-services form input:last-child {
+            position: absolute;
+            width: 90px;
+            height: 40px;
+            color: #fff;
+            border: none;
+            font-family:'Marhey', sans-serif;
+            background-color: var(--main--color);
+           right:10px;
+           bottom: 20px;
+           font-size: 10px;
+            cursor: pointer;
+        }
+    }
 .contact-info .about-services form input:focus{
     outline: none;
         }
@@ -1664,7 +1806,7 @@ height: 200px;
 }
 @media (max-width:767px){
     .contact-info .contact-content {
-        width: 70%;
+        width: 85%;
         height: 200px;
         background-color: var(--main--color);
         color: #fff;
@@ -1690,6 +1832,25 @@ height: 200px;
     font-family:'Marhey', sans-serif;
     font-weight: bold;
     }
+    @media (max-width: 567px){
+        .contact-info .contact-content button {
+            position: absolute;
+            width: 90px;
+            background-color: #fff;
+            padding: 10px 0 ;
+            border: 1px solid #fff;
+            color: #264653;
+            margin-left: 20px;
+            right: 10px;
+            bottom: 20px;
+            cursor: pointer;
+            overflow: hidden;
+            z-index: 3;
+            font-family:'Marhey', sans-serif;
+            font-weight: bold;
+            font-size: 10px;
+            }
+    }
 .contact-info .contact-content div{
     width: 100%;
     background-color: var(--main--color);
@@ -1699,6 +1860,7 @@ height: 200px;
     display: flex;
     justify-content: space-evenly;
 }
+
 .contact-info .contact-content h3{
  font-size: 22px;
  text-shadow:0px 3px 5px black;
@@ -1709,7 +1871,12 @@ height: 200px;
         padding: 10px 20px;
        }
 }
-
+@media (max-width:567px){
+    .contact-info .contact-content h3{
+        font-size: 20px;
+        padding: 10px 20px;
+       }
+}
    .contact-info .contact-content div i{
   width: 35px;
   height: 30px;
@@ -1810,7 +1977,7 @@ text-shadow:0px 3px 5px black;
 }
 @media (max-width:567px){
     .footer {
-     height: 350px;
+     height: 750px;
         }
 
     .footer .footer-content {
@@ -1826,6 +1993,12 @@ text-shadow:0px 3px 5px black;
 .footer .footer-content .follow-us {
 display: flex;
 justify-content: space-between;
+}
+@media (max-width:567px){
+    .footer .footer-content .follow-us {
+        display: flex;
+        justify-content: center;
+        }
 }
 .footer .footer-content .follow-us a {
     position: relative;
