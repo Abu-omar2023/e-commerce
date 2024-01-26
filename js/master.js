@@ -76,7 +76,7 @@ $(window).scroll(function(){
         $('.sale .introSale').animate({
             marginRight:'0',
           
-        },1000);
+        },600);
         
     }
     });
@@ -86,7 +86,7 @@ $(window).scroll(function(){
             $('.sale .photoSale').animate({
                 marginLeft:'0',
               
-            },1000);
+            },600);
             
         }
         });
