@@ -155,7 +155,7 @@ $(window).scroll(function(){
         
         $('.bodyImg').css({
            
-            'background-image': 'url(./img/img-1946.jpg)'
+            'background-image': 'url(./img/pexels-marek-levak-226548.jpg)'
       
         },10) ;
         
