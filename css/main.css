@@ -32,7 +32,7 @@ font-family: 'Rubik', sans-serif;
         z-index: -1;
         background-image: url(../img/pexels-marek-levak-2265487.jpg);
         background-size: cover;
-        background-position: center;
+        /* background-position: center; */
         background-repeat: no-repeat;
         /* display: none; */
     }
@@ -113,10 +113,10 @@ position: relative;
 }
 @keyframes trns {
     from {
-        margin-left: -150%;
+        margin-left: -250%;
     }
     to{
-        margin-right: -150%;
+        margin-right: -250%;
     }
 }
 .leftNav div {
@@ -239,7 +239,7 @@ position: relative;
      height: 100%;
      padding: 10px;
      text-decoration: none;
-     font-size: 13px;
+     font-size: 14px;
     cursor: pointer;
     color: #264653;
     font-weight: bold;
